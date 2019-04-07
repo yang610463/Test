@@ -1,20 +1,21 @@
 package com.example.test.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
-@RestController
+@Controller
 public class TestController {
 
-	
-	
-	@RequestMapping("hello")
-	public String sayHello() {
-		return "Hello World~~~~~~~~~~";
+
+	@GetMapping("/index")
+	public String index(){
+		return "index";
 	}
-	@RequestMapping("hi")
-	public String sayHi() {
-		return "Hello World~~~~~~~~~~Hi";
+
+	@GetMapping("/hello")
+	@ResponseBody
+	public String hello(){
+		return "index";
 	}
 	
 }
