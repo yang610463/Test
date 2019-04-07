@@ -12,6 +12,9 @@ public class TestController {
 	public String sayHello() {
 		return "Hello World~~~~~~~~~~";
 	}
-	
+	@RequestMapping("hi")
+	public String sayHi() {
+		return "Hello World~~~~~~~~~~Hi";
+	}
 	
 }
