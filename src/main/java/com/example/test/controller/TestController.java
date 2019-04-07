@@ -18,4 +18,10 @@ public class TestController {
 		return "index";
 	}
 	
+	@GetMapping("/hi")
+	@ResponseBody
+	public String hi(){
+		return "hello world~~~";
+	}
+	
 }
