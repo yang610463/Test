@@ -5,7 +5,11 @@ spring:
    password: root
  application:
     name: microservice-provider-user
-   
+ mvc:
+  view:
+   prefix: /
+   suffix: .html
+
 mybatis:
   mapper-locations: classpath:/mapper/*.xml
   configuration-properties:
